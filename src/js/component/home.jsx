@@ -16,16 +16,16 @@ const Home = () => {
 
 	const pulsarEnter = (e) => {
         if (e.key === "Enter" && inputTarea.trim() !== "") {
-           crearTarea();
+           crearTarea(inputTarea);
         }
     };
 
-	const crearTarea = () => {
+	const crearTarea = (inputTarea) => {
 		const myHeaders = new Headers();
 		myHeaders.append("Content-Type", "application/json");
 
 		const raw = JSON.stringify({
-		"label": "Limpiar la cocina",
+		"label": inputTarea,
 		"is_done": false
 		});
 
@@ -37,9 +37,9 @@ const Home = () => {
 		};
 
 		fetch("https://playground.4geeks.com/todo/todos/ainhoa", requestOptions)
-		.then((response) => response.json())
-		.then((result) => console.log(result))
-		.catch((error) => console.error(error));
+			.then((response) => response.json())
+			.then((result) => console.log(result))
+			.catch((error) => console.error(error));
 	}
 
 	/*Tenemos que traer la lista de tareas de la API, para eso utilizaremos GET*/
@@ -53,13 +53,16 @@ const Home = () => {
 						crearUsuario()
 					}
 				}
-				}) //.jason() pasame la respuesta en formato json (formateado)
+				}) 
 			.then((result) => setListaTareas(result.todos))
 			.catch((error) => console.error(error));
 	}
+	
+	useEffect(() => {
+		obtenerListaTareasAPI()
+	}, [listaTareas])
 
-	console.log(listaTareas);
-
+	
 	/*Crearemos un nuevo usuario si error 404, para eso utilizaremos POST*/
 	const crearUsuario = () => {
 		const requestOptions = {
@@ -73,9 +76,22 @@ const Home = () => {
 			.catch((error) => console.error(error));
 	}
 
-	useEffect(() => {
-		obtenerListaTareasAPI()
-	}, [])
+	const eliminarTarea = () => {
+		const raw = "";
+
+		const requestOptions = {
+		method: "DELETE",
+		body: raw,
+		redirect: "follow"
+		};
+
+		fetch("https://playground.4geeks.com/todo/todos/139", requestOptions)
+		.then((response) => response.json())
+		.then((result) => console.log(result))
+		.catch((error) => console.error(error));
+	} 
+
+
 
 	return (
 		<div className="text-center">
@@ -89,6 +105,12 @@ const Home = () => {
 					onKeyDown={pulsarEnter}>
 				</input>
 			</div>
+			<button> X</button>
+			{listaTareas.map((elemento, index) => 
+			<p key={index}>
+				{elemento.label}
+			</p>
+		)}
 			
 		</div>
 	);
