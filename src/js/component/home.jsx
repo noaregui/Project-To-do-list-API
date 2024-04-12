@@ -7,7 +7,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 
 	const [inputTarea, setInputTarea] = useState("")
-	const [listaTareas, setListaTareas] = useState([]);
+	const [listaTareas, setListaTareas] = useState([])
 
 	const obtenerListaTareasAPI = () => {
 		fetch("https://playground.4geeks.com/todo/users/ainhoa")
@@ -101,22 +101,25 @@ const Home = () => {
 				<div className="input">
 					<input
 						type="text"
-						placeholder="Escribe la tarea..."
+						placeholder="Do you have any tasks in mind?"
 						value={inputTarea}
 						onChange={escribirInput}
 						onKeyDown={pulsarEnter}>
 					</input>
 				</div>
-				
+				<div className="listaTareas">
 				{listaTareas.map((elemento, index) => 
 				<p key={index}>
 					{elemento.label}
 					<button
 						onClick={() => eliminarTarea(elemento.id)}
-					>X</button>
+					>x</button>
 				</p>,
-				
 				)}
+				</div>
+			</div>
+			<div className="contador">
+				<span> {listaTareas.length} item left</span>
 			</div>
 		</div>
 	);
