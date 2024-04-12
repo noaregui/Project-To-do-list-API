@@ -64,6 +64,13 @@ const Home = () => {
 		   setInputTarea("");
         }
     };
+
+	const pulsarAdd = () => {
+		if(inputTarea.trim() !=="") {
+			crearTarea(inputTarea);
+		  	setInputTarea("");
+		}
+	}
 		
 	/*Crearemos un nuevo usuario si error 404, para eso utilizaremos POST*/
 	const crearUsuario = () => {
@@ -100,20 +107,29 @@ const Home = () => {
 				<h1>TO DO LIST</h1>
 				<div className="input">
 					<input
+						className="texto-input"
 						type="text"
 						placeholder="Do you have any tasks in mind?"
 						value={inputTarea}
 						onChange={escribirInput}
 						onKeyDown={pulsarEnter}>
 					</input>
+					<button 
+						className="add"
+						onClick={pulsarAdd}
+					>
+  						<span class="add-content">Add</span>
+					</button>
 				</div>
 				<div className="listaTareas">
 				{listaTareas.map((elemento, index) => 
 				<p key={index}>
 					{elemento.label}
 					<button
+						class="delete"
 						onClick={() => eliminarTarea(elemento.id)}
-					>x</button>
+					><span className="text">x</span>
+					</button>
 				</p>,
 				)}
 				</div>
