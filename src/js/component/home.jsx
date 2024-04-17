@@ -96,7 +96,11 @@ const Home = () => {
 
 		fetch(`https://playground.4geeks.com/todo/todos/${id}`, requestOptions)
 		
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.status === 204) {
+				obtenerListaTareasAPI()
+			}
+			return response.json()})
 		.then((result) => console.log(result))
 		.catch((error) => console.error(error));
 	} 
