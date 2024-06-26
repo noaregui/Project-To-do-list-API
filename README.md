@@ -1,42 +1,59 @@
-# Hello World with React boilerplate
+<div align="center">
+	<h1 align="center">✅ To do list</h1>
+</div>
+<p>¿Conoces esa sensación de recordar una tarea pendiente? A veces puede ser realmentec complicado acordarse de todo lo que tenemos que hacer, por ello, en este repositorio veremos cómo hacer una to do list sencilla y eficiente para gestionar tus tareas diarias. Perfecta para principiantes que quieran aprender y practicar habilidades de desarrollo web.</p>
+<div align="center">
+	<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExem11bXVxYzB5bHcybWFxNm5mNnJld2NhYTQ2dGVhbnZsaDMxdnFueCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SOPagmuxYZChi/200.webp"></img>
+</div>
 
-Start coding a react application
+## 🌟 ¿Por qué usar una Todo List App?
+Mantenerse organizado puede ser un desafío, especialmente cuando tienes muchas tareas que completar. Una lista de tareas:
 
-> If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
+- ✅ Te ayuda a priorizar tareas importantes.
+- 🕒 Aumenta tu productividad al permitirte enfocarte en lo que realmente importa.
+- 🧘 Reduce el estrés al proporcionar una visión clara de lo que necesitas hacer.
+- 🧠 ¡Evita esos momentos incómodos de “lo sabía pero lo olvidé”!
 
-## How to start coding?
+## 💻 Características del Proyecto
+- ✍🏿 Crear Tareas: Añade nuevas tareas con facilidad.
+- ❌ Eliminar Tareas: Elimina las tareas completadas o que ya no son relevantes.
+- 🌝 Interfaz Intuitiva: Diseño simple y fácil de usar.
 
-- Install the packages with `$ npm install`.
-- Run the webpack server with `$ npm run start`
+## 🛠️ Tecnologías Utilizadas
+Este proyecto está construido con:
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+- HTML: Para la estructura básica de la aplicación.
+- CSS: Para el estilo y el diseño visual.
+- JSX: Para la lógica y funcionalidad interactiva.
+- React: Para manejar la interfaz de usuario de manera eficiente y modular.
 
-## Local Installation (skip if you are working on codespaces or gitpod)
+<div align="center">
+	<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWVpMXY2enN4eXl5d3ZqMWJ2aTdhbTltcGI4NmJ3bDJqcWd0cXhwMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VbnUQpnihPSIgIXuZv/giphy.webp"></img>
+</div>
 
-Download the boilerplate using git
+## 📬 Importante
+Asegúrate de estar usando la versión 10 de node.
+
+1. Instalar paquetes:
+```
+$ npm install
+```
+2. ¡Empieza con el código! y el servidor de desarrollo webpack con recarga en vivo, para windows, mac, linux o Gitpod:
 
 ```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
+$ npm run start
 ```
 
-## Publish your website!
+### 🎨Estilos
+Puede actualizar `styles/index.css` o crear nuevos archivos `.css` dentro de `styles/` e importarlos a sus archivos scss o js actuales según tus necesidades.
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+### 📱 Componentes
+Agrega más archivos a tu carpeta `./src/js/components` cuando sea necesario.
 
-It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
+## 👥 Contribución
 
-## Other features
+Si quieres contribuir al desarrollo de la to do list o tienes sugerencias para mejorar sus funcionalidades, ¡no dudes en hacer un fork del repositorio y enviar un pull request!
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-command publish of the code to github pages with `npm run deploy:github`.
-- Babel 7 (really fast).
+## 📃 Contacto
 
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+Puedes contactarme a través de [LinkedIn](https://www.linkedin.com/in/ainhoa-leon-arrieta/) si tienes preguntas o comentarios adicionales sobre el proyecto o simplemente quieres crear red.
