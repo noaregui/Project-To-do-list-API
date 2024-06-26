@@ -32,7 +32,6 @@ Este proyecto está construido con:
 </div>
 
 ## 📬 Importante
-Asegúrate de estar usando la versión 10 de node.
 
 1. Instalar paquetes:
 ```
@@ -57,3 +56,9 @@ Si quieres contribuir al desarrollo de la to do list o tienes sugerencias para m
 ## 📃 Contacto
 
 Puedes contactarme a través de [LinkedIn](https://www.linkedin.com/in/ainhoa-leon-arrieta/) si tienes preguntas o comentarios adicionales sobre el proyecto o simplemente quieres crear red.
+
+<div align="center">
+	<h2>Lo malo es que ahora ya no tienes excusa para no hacer tus tareas 🫢 </h2>
+	<img src="https://media2.giphy.com/media/KavG3AruG3gAXKkswv/200.webp?cid=790b7611yryc1cvv8iu3odikgcdwfpovs90ehkwm70ox9s7e&ep=v1_gifs_search&rid=200.webp&ct=g"></img>
+</div>
+<br></br>
